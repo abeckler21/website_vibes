@@ -1,0 +1,113 @@
+/* --- Page background --- */
+body {
+  background-color: #e6f2ff; /* light blue background */
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding-top: 10px; /* buffer for pull-down reveal */
+  overflow-y: scroll; /* ensures scrollable area */
+}
+
+/* --- Main white box --- */
+#main {
+  background-color: #fff;
+  width: 768px;
+  margin: -12px auto 0 auto; /* moves the box up to hide the top border */
+  border: 2px solid #003366; /* full dark blue border, including top */
+  box-shadow: 0 0 4px #99b3e6;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* --- Inner white padding around header --- */
+#whiteframe {
+  padding: 24px 48px 24px 48px;
+}
+
+/* --- Top white strip above name bar --- */
+#topspace {
+  height: 24px;
+  background-color: #fff;
+}
+
+/* --- Header bar (name) --- */
+#header {
+  background-color: #cce0ff; /* light blue header bar */
+  padding: 12px 20px;
+  font-size: 22px; /* was 18px, now ~1.2× larger */
+}
+
+/* --- Content (links) --- */
+#content {
+  padding: 16px 20px 0 20px;
+  line-height: 1.4; /* slightly tighter spacing */
+  font-size: 17px;  /* slightly larger links */
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #003366;
+}
+
+a:hover {
+  background-color: #003366;
+  color: #fff;
+}
+
+/* --- Responsive scaling --- */
+@media (max-width: 800px) {
+  #main {
+    width: 90%;
+  }
+  #header {
+    font-size: 20px;
+  }
+  #content {
+    font-size: 16px;
+  }
+}
+
+
+/* --- Section headers --- */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 21px; /* slightly larger for emphasis */
+  color: #003366;
+}
+
+/* --- Horizontal divider --- */
+hr {
+  border: none;
+  border-top: 1px solid #00336633;
+  margin: 28px 0;
+}
+
+/* --- "Back to top" link --- */
+.back {
+  font-size: 15px;
+  text-decoration: none;
+  color: #003366;
+  border: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+  color: #001f4d;
+}
+
+/* --- Internal section links (match homepage link style) --- */
+#content a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #003366;
+}
+
+#content a:hover {
+  background-color: #003366;
+  color: #fff;
+}
